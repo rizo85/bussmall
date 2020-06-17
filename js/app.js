@@ -98,23 +98,15 @@ function render() {
 
   // var a= 0;
 
-  console.log('value of a is ' + a);
-
   // random number for image 2
 
   var b = Math.floor(Math.random() * allProducts.length); // returns a random integer from 0 to 10
-
-  console.log('value of b is ' + b);
 
   // random number for image 3
 
   var c = Math.floor(Math.random() * allProducts.length); // returns a random integer from 0 to 10
 
-  console.log('value of c is ' + c);
-
   lineup.push(a, b, c);
-
-  console.log(lineup);
 
   // random number for image 1
 
@@ -617,6 +609,9 @@ function renderViews(){
 document.getElementById("pic1").addEventListener("click", function() {
 
   counter++;
+
+  clickCounter();
+
   console.log('Counter is at ' + counter);
 
   if(counter > 24){
@@ -643,7 +638,11 @@ document.getElementById("pic1").addEventListener("click", function() {
 
 document.getElementById("pic2").addEventListener("click", function() {
 
-  if(counter < 24){
+  counter++;
+
+  clickCounter();
+
+  if(counter > 24){
 
     renderNums();
 
@@ -667,9 +666,13 @@ document.getElementById("pic2").addEventListener("click", function() {
 
 document.getElementById("pic3").addEventListener("click", function() {
 
+  counter++;
+
+  clickCounter();
+
   console.log(counter);
 
-  if(counter < 24){
+  if(counter > 24){
 
     renderNums();
 
@@ -683,9 +686,70 @@ document.getElementById("pic3").addEventListener("click", function() {
 
   } else {
 
-    voteForTwo();
+    voteForThree();
 
 
   }
 
 });
+
+
+
+function clickCounter() {
+  if(typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    document.getElementById("img21").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+  } else {
+    document.getElementById("img21").innerHTML = "Sorry, your browser does not support web storage...";
+  }
+}
+
+function voteCounter() {
+  if(typeof(Storage) !== "undefined") {
+    if (localStorage.votecount) {
+      localStorage.votecount = Number(localStorage.votecount)+1;
+    } else {
+      localStorage.votecount = 1;
+    }
+    document.getElementById("img21").innerHTML = "You have clicked the button " + localStorage.votecount + " time(s).";
+  } else {
+    document.getElementById("img21").innerHTML = "Sorry, your browser does not support web storage...";
+  }
+}
+
+function viewCounter() {
+  if(typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    document.getElementById("img21").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+  } else {
+    document.getElementById("img21").innerHTML = "Sorry, your browser does not support web storage...";
+  }
+}
+
+
+function getVals() {
+
+  console.log(counter + ' counter retrieved at load.');
+
+  if (localStorage.clickcount === undefined) {
+    document.getElementById("img21").innerHTML = 'click an image!';
+  } else {
+    document.getElementById("img21").innerHTML = "You have voted: " + localStorage.clickcount + " time(s).";
+    counter = parseInt(localStorage.clickcount);
+  }
+
+}
+
+window.onload = (event) => {
+  console.log('page is fully loaded');
+  getVals();
+};
+

@@ -423,14 +423,6 @@ text-align: left;
   background-size: cover;
 }
 
-#img20{
-  background: url(../img/wine-glass.jpg) no-repeat; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
 #img11{
   background: url(../img/pen.jpg) no-repeat; 
   -webkit-background-size: cover;
@@ -534,6 +526,23 @@ float: left;
   -webkit-text-stroke-color: black;
 }
 
+#img20{
+  background: url(../img/wine-glass.jpg) no-repeat; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#img21{
+  margin-top: 20px;
+background-color: rgb(65, 108, 146); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 201px;
+}
 
 #pic1{
 margin-top: 10px;
