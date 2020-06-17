@@ -108,7 +108,7 @@ function render() {
 
   lineup.push(a, b, c);
 
-<<<<<<< HEAD
+
 ///
 
 
@@ -127,8 +127,11 @@ function render() {
 
   console.log(lineup);
 
+<<<<<<< HEAD
 =======
 >>>>>>> 2c70a7540e5f06ea6f50a1b354742457c045bcd9
+=======
+>>>>>>> 816a6375466daa7943c907021fdfb2a8eb668611
   // random number for image 1
 
   pic1 = allProducts[a].img;
@@ -662,13 +665,11 @@ document.getElementById("pic1").addEventListener("click", function() {
 
 document.getElementById("pic2").addEventListener("click", function() {
 
-<<<<<<< HEAD
-=======
   counter++;
 
   clickCounter();
 
->>>>>>> 2c70a7540e5f06ea6f50a1b354742457c045bcd9
+
   if(counter > 24){
 
     renderNums();
