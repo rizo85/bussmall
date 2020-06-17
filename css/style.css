@@ -54,11 +54,26 @@ margin-top: 6px;
   right: -82px;
   z-index: -1;
   border-radius: 10px;
-  animation: cloud 9s;
+  animation: cloud 29s;
   animation-iteration-count: infinite;
 
-  animation-delay: 3s;
+  animation-delay: 6s;
 
+}
+
+#sun{
+  height:45px;
+  width:90px;
+  border-radius: 0 0 90px 90px;
+border: solid orange 2px;
+
+  position: absolute;
+  background-color: #cae761;
+  
+  float: right;
+  z-index: -3;
+  animation: cloud 89s;
+  animation-iteration-count: infinite;
 }
 
 #pine2{
@@ -74,12 +89,52 @@ position: absolute;
   float: right;
   z-index: 1;
   border-radius: 10px;
-  animation: cloud 9s;
+  animation: cloud 29s;
   animation-iteration-count: infinite;
 
-  animation-delay: 5s;
+  animation-delay: 8s;
 
 }
+
+#pine3{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 31px 77px 31px;
+  border-color: transparent transparent #185920 transparent;
+  right: -82px;
+  margin-top: 30px;
+  position: absolute;
+    margin-right: -23px;
+    float: right;
+    z-index: 1;
+    border-radius: 10px;
+    animation: cloud 29s;
+    animation-iteration-count: infinite;
+  
+    animation-delay: 2s;
+  
+  }
+
+  #pine4{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 31px 77px 31px;
+    border-color: transparent transparent #185920 transparent;
+    right: -82px;
+    margin-top: 30px;
+    position: absolute;
+      margin-right: -23px;
+      float: right;
+      z-index: 1;
+      border-radius: 10px;
+      animation: cloud 29s;
+      animation-iteration-count: infinite;
+    
+      animation-delay: 12s;
+    
+    }
 
 #bush{
   right: -82px;
@@ -95,13 +150,54 @@ position: absolute;
   float: right;
   z-index: 1;
   border-radius: 10px;
-  animation: cloud 9s;
+  animation: cloud 29s;
   animation-iteration-count: infinite;
-  animation-delay: 7s;
+  animation-delay: 11s;
 
 
 }
 
+#bush2{
+  right: -82px;
+  margin-top: 54px;
+  width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 21px 53px 21px;
+border-color: transparent transparent #2da33b transparent;
+
+position: absolute;
+  margin-right: -23px;
+  float: right;
+  z-index: 1;
+  border-radius: 10px;
+  animation: cloud 29s;
+  animation-iteration-count: infinite;
+  animation-delay: 6s;
+
+
+}
+
+#bush3{
+  right: -82px;
+  margin-top: 54px;
+  width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 21px 53px 21px;
+border-color: transparent transparent #2da33b transparent;
+
+position: absolute;
+  margin-right: -23px;
+  float: right;
+  z-index: 1;
+  border-radius: 10px;
+  animation: cloud 29s;
+  animation-iteration-count: infinite;
+  animation-delay: 18s;
+
+
+}
 
 #logoImage{
 position: relative;
@@ -128,7 +224,21 @@ z-index: 3;
   float: right;
   z-index: 1;
   border-radius: 10px;
-  animation: cloud 9s;
+  animation: cloud 29s;
+  animation-iteration-count: infinite;
+}
+
+#cloud4{
+  margin-top: 13px;
+  right: -20px;
+  position: absolute;
+  height: 23px;
+  width: 38px;
+  background-color: #ffffff;
+  float: right;
+  z-index: 1;
+  border-radius: 10px;
+  animation: cloud 39s;
   animation-iteration-count: infinite;
 }
 
@@ -141,10 +251,10 @@ z-index: 3;
   background-color: #ffffff;
 
   z-index: 1;
-  border-radius: 19px;
-  animation: cloud 9s;
+  border-radius: 29px;
+  animation: cloud 22s;
   animation-iteration-count: infinite;
-  animation-delay: 4s;
+  animation-delay: 6s;
 
 }
 
@@ -157,9 +267,23 @@ z-index: 3;
   background-color: #ffffff;
   z-index: 1;
   border-radius: 29px;
-  animation: cloud 9s;
+  animation: cloud 29s;
   animation-iteration-count: infinite;
-  animation-delay: 2s;
+  animation-delay: 9s;
+}
+
+#cloud5{
+  margin-top: 7px;
+  margin-left: -80px;
+  position: absolute;
+  height: 50px;
+  width: 78px;
+  background-color: #ffffff;
+  z-index: 1;
+  border-radius: 29px;
+  animation: cloud 29s;
+  animation-iteration-count: infinite;
+  animation-delay: 19s;
 }
 
 #logoText{
@@ -194,8 +318,8 @@ min-height: 400px;
 }
 
 #sidelineHead{
-
-      font-size: 41px;
+text-align: left;
+      font-size: 172%;
       -webkit-text-stroke-width: 0.6px;
       -webkit-text-stroke-color: #000000;
       -webkit-text-fill-color: #00a7f5;
@@ -393,15 +517,26 @@ min-height: 400px;
   min-height: 300px;
 }
 
+.cir{
+  background-color: rgb(207, 245, 37);
+  border-radius: 100px;
+}
+
 .or{
   background-color: transparent;
   min-height: 300px;
 float: left;
   width: 5%;
+  line-height: 300px;
+  color: rgb(245, 59, 59);
+  font-size: xx-large;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
 
 #pic1{
+margin-top: 10px;
 min-height: 300px;
 background-color: darkred;
 width: 30%;
@@ -415,6 +550,8 @@ float: left;
 
 }
 #pic2{
+
+  margin-top: 10px;
   min-height: 300px;
 background-color: rgb(0, 56, 139);
 width: 30%;
@@ -427,6 +564,8 @@ background-size: cover;
 
 }
 #pic3{
+
+  margin-top: 10px;
   min-height: 300px;
 
 width: 30%;
@@ -519,5 +658,5 @@ bottom: 0px;
 
 @keyframes cloud {
   from   {right: 0px;}
-  to {right: 110% }
+  to {right: 106% }
 }

@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable quotes */
 /* eslint-disable no-unused-vars */
 'use strict';
@@ -603,7 +604,7 @@ function renderViews(){
 
     /// now render the views
 
-    
+
 
     // Configuration options go here
     options: {}
