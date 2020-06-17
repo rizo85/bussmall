@@ -5,9 +5,8 @@
 
   <meta charset='UTF-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
   <link rel='stylesheet' href='css/style.css'>
-  <!-- <script src="js/jquery-3.5.1.min.js"></script> -->
   <title>Buss Mall</title>
 </head>
 <body>
@@ -37,27 +36,29 @@
 
       <div id='sideline'>
 
-        <div id='sidelineHead'><p>I am a head</p></div>
-        <div id='sidelineText'><p>Sideline text</p></div>
-        <div id='SidelineList'>
+        <div id='sidelineHead'><p>Products</p></div>
+        <div id='sidelineList'>
           
-          <ul>
-
-            <li>List Item</li>
-            <li>List Item</li>
-            <li>List Item</li>
-            <li>List Item</li>
-            <li>List Item</li>
-            <li>List Item</li>
-            <li>List Item</li>
-            <li>List Item</li>
-            <li>List Item</li>
-            <li>List Item</li>
-            <li>List Item</li>
-            <li>List Item</li>
-            <li>List Item</li>
-
-          </ul>
+         <div class='sidelinePics' id='img1'></div>
+         <div class='sidelinePics' id='img2'></div>
+         <div class='sidelinePics' id='img3'></div>
+         <div class='sidelinePics' id='img4'></div>
+         <div class='sidelinePics' id='img5'></div>
+         <div class='sidelinePics' id='img6'></div>
+         <div class='sidelinePics' id='img7'></div>
+         <div class='sidelinePics' id='img8'></div>
+         <div class='sidelinePics' id='img9'></div>
+         <div class='sidelinePics' id='img10'></div>
+         <div class='sidelinePics'id='img11'></div>
+         <div class='sidelinePics'id='img12'></div>
+         <div class='sidelinePics'id='img13'></div>
+         <div class='sidelinePics'id='img14'></div>
+         <div class='sidelinePics'id='img15'></div>
+         <div class='sidelinePics'id='img16'></div>
+         <div class='sidelinePics' id='img17'></div>
+         <div class='sidelinePics'id='img18'></div>
+         <div class='sidelinePics'id='img19'></div>
+         <div class='sidelinePics'id='img20'></div>
         
         
         </div>
@@ -68,20 +69,42 @@
 
       <div id='picRow'>
 
-        <div id='pic1' onClick="window.location.reload()">
+        <div id='pic1' >
         </div>
         <div class='or'></div>
-        <div id='pic2' onClick="window.location.reload()"></div>
+        <div id='pic2'></div>
         <div class='or'></div>
-        <div id='pic3' onClick="window.location.reload()"></div>
+        <div id='pic3'></div>
 
 
       </div>
-      <div id='spacerRow'> <button onClick="window.location.reload();">Meh, click me or the image</button></div>
+      <div id='spacerRow'>
+        <div id='infoPic1'>
+          <p><span id='pic1Views'>Views: 0 </span> </p>
+          <p><span id='pic1Votes'>Views: 0 </span> </p>
+        </div>
+
+        <div class='spacerInf'>.</div>
+
+        <div id='infoPic2'>
+          <p><span id='pic2Views'>Views: 0 </span></p>
+          <p><span id='pic2Votes'>Views: 0 </span></p>
+        </div>
+        
+        <div class='spacerInf'>.</div>
+
+        <div id='infoPic3'>
+          <p><span id='pic3Views'>Views: 0 </span> </p>
+          <p><span id='pic3Votes'>Views: 0 </span> </p>
+        </div>
+        
+    </div>
       <div id='infoRow'>
 
+        <canvas id="myChart"></canvas>
 
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <canvas id="myChart2"></canvas>
+        
       </div>
 
 </div>
@@ -92,5 +115,6 @@
 
     <div id='footerDiv'></div>
   <script type='text/javascript' src='js/app.js'></script>
+  <script type='text/javascript' src='js/Chart.js'></script>
 </body>
 </html>
