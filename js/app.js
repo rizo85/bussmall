@@ -108,6 +108,25 @@ function render() {
 
   lineup.push(a, b, c);
 
+
+///
+
+
+////
+
+
+
+
+////
+
+
+
+
+// Here is store the first vote
+
+
+  console.log(lineup);
+
   // random number for image 1
 
   pic1 = allProducts[a].img;
@@ -165,6 +184,9 @@ function render() {
   viewsB = 0;
 
   viewsC = 0;
+
+  votecounter();
+
 
 }
 
@@ -637,6 +659,7 @@ document.getElementById("pic1").addEventListener("click", function() {
 
 
 document.getElementById("pic2").addEventListener("click", function() {
+
 
   counter++;
 
