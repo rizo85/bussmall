@@ -113,6 +113,22 @@ function render() {
 
   lineup.push(a, b, c);
 
+///
+
+
+////
+
+
+
+
+////
+
+
+
+
+// Here is store the first vote
+
+
   console.log(lineup);
 
   // random number for image 1
@@ -172,6 +188,9 @@ function render() {
   viewsB = 0;
 
   viewsC = 0;
+
+  votecounter();
+
 
 }
 
@@ -640,7 +659,7 @@ document.getElementById("pic1").addEventListener("click", function() {
 
 document.getElementById("pic2").addEventListener("click", function() {
 
-  if(counter < 24){
+  if(counter > 24){
 
     renderNums();
 
@@ -664,7 +683,7 @@ document.getElementById("pic3").addEventListener("click", function() {
 
   console.log(counter);
 
-  if(counter < 24){
+  if(counter > 24){
 
     renderNums();
 
@@ -676,7 +695,7 @@ document.getElementById("pic3").addEventListener("click", function() {
 
   } else {
 
-    voteForTwo();
+    voteForThree();
 
 
   }
