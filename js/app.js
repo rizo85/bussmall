@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable quotes */
 /* eslint-disable no-unused-vars */
 'use strict';
@@ -563,8 +564,9 @@ function renderNums(){
       labels: ['Bag', 'Banana', 'Bathroom', 'Boots', 'Breakfast', 'Bubblegum', 'Chair', 'Cthulhu', 'Dog Duck', 'Dragon', 'Pen', 'Pet Sweeper', 'Scissors', 'Shark', 'Baby Sweeper', 'Tauntaun', 'Unicorn', 'Usb', 'Water can', 'Wine glass'],
       datasets: [{
         label: 'Total votes',
+        labelColor: '#000000',
         backgroundColor: 'rgb(255, 99, 132)',
-        borderColor: 'rgb(255, 99, 132)',
+        borderColor: 'rgb(8, 10, 13)',
         data: [allProducts[0].tc, allProducts[1].tc,allProducts[2].tc, allProducts[3].tc,allProducts[4].tc, allProducts[5].tc,allProducts[6].tc, allProducts[7].tc,allProducts[8].tc, allProducts[9].tc,allProducts[10].tc, allProducts[11].tc,allProducts[12].tc, allProducts[13].tc,allProducts[14].tc, allProducts[15].tc,allProducts[16].tc, allProducts[17].tc,allProducts[18].tc, allProducts[19].tc]
       }]
     },
@@ -572,7 +574,6 @@ function renderNums(){
 
     /// now render the views
 
-    
 
     // Configuration options go here
     options: {}
@@ -603,7 +604,7 @@ function renderViews(){
 
     /// now render the views
 
-    
+
 
     // Configuration options go here
     options: {}
@@ -628,6 +629,8 @@ document.getElementById("pic1").addEventListener("click", function() {
 
     document.getElementById('spacerRow').style.display = 'none';
 
+    document.getElementById('infoRow').style.backgroundColor = 'white';
+
 
   } else {
 
@@ -649,6 +652,8 @@ document.getElementById("pic2").addEventListener("click", function() {
     document.getElementById('picRow').style.display = 'none';
 
     document.getElementById('spacerRow').style.display = 'none';
+
+    document.getElementById('infoRow').style.backgroundColor = 'white';
 
 
   } else {
@@ -673,6 +678,8 @@ document.getElementById("pic3").addEventListener("click", function() {
     document.getElementById('picRow').style.display = 'none';
 
     document.getElementById('spacerRow').style.display = 'none';
+
+    document.getElementById('infoRow').style.backgroundColor = 'white';
 
   } else {
 
