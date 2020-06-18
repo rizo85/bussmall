@@ -106,14 +106,19 @@ function handleClickOnProductLeft() {
   console.log('The total number of clicks is ' + totalClicks);
 
   // showing the number of click on screen
-  document.getElementById('img21').innerHTML = totalClicks;
+  document.getElementById('img21').innerHTML = 'Total rounds: ' + totalClicks;
   localStorage.setItem('chartPersist',JSON.stringify(productsList));
   localStorage.setItem('clickPersist',totalClicks);
   if (totalClicks >= 25) {
+
+    // this is the end, and this is the chart
     document.getElementById('picRow').style.display = 'none';
     document.getElementById('spacerRow').style.display = 'none';
     document.getElementById('infoRow').style.backgroundColor = 'white';
-    // displayResults();
+    chartMaker();
+    chartMaker2();
+    document.getElementById('button').style.display = 'block';
+
   }
 }
 
@@ -130,14 +135,19 @@ function handleClickOnProductCenter() {
   console.log('The total number of clicks is ' + totalClicks);
 
   // showing the number of click on screen
-  document.getElementById('img21').innerHTML = totalClicks;
+  document.getElementById('img21').innerHTML = 'Total rounds: ' + totalClicks;
   localStorage.setItem('chartPersist',JSON.stringify(productsList));
   localStorage.setItem('clickPersist',totalClicks);
   if (totalClicks >= 25) {
 
+    // this is the end, and this is the chart
     document.getElementById('picRow').style.display = 'none';
     document.getElementById('spacerRow').style.display = 'none';
     document.getElementById('infoRow').style.backgroundColor = 'white';
+    chartMaker();
+    chartMaker2();
+    document.getElementById('button').style.display = 'block';
+
   }
 }
 // Creating a function to handle click on right product window
@@ -153,14 +163,20 @@ function handleClickOnProductRight() {
   console.log('The total number of clicks is ' + totalClicks);
 
   // showing the number of click on screen
-  document.getElementById('img21').innerHTML = totalClicks;
+  document.getElementById('img21').innerHTML = 'Total rounds: ' + totalClicks;
   localStorage.setItem('chartPersist',JSON.stringify(productsList));
   localStorage.setItem('clickPersist',totalClicks);
   if (totalClicks >= 25) {
 
+
+    // this is the end, and this is the chart
     document.getElementById('picRow').style.display = 'none';
     document.getElementById('spacerRow').style.display = 'none';
     document.getElementById('infoRow').style.backgroundColor = 'white';
+    chartMaker();
+    chartMaker2();
+    document.getElementById('button').style.display = 'block';
+
   }
 }
 
@@ -284,7 +300,7 @@ function imageMaker() {
 
   console.log(randomNumRight);
 
-// I want the name of the products to show
+  // I want the name of the products to show
 
   document.getElementById('pic1Views').innerHTML = '' + productsList[randomNumLeft].productName + '';
   document.getElementById('pic2Views').innerHTML = '' + productsList[randomNumCenter].productName + '';

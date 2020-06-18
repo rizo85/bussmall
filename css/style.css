@@ -535,13 +535,21 @@ float: left;
 }
 
 #img21{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  border-radius: 30px;
   margin-top: 20px;
+  line-height: 55px;
 background-color: rgb(65, 108, 146); 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   width: 201px;
+  margin-bottom: 40px;
+  background: linear-gradient(45deg, #86e7fc 12.5%, #e7defc 12.5%, #e7defc 37.5%, #86e7fc 37.5%, #86e7fc 62.5%, #e7defc 62.5%, #e7defc 87.5%, #86e7fc 87.5%);
+  background-size: 100px 100px;
+  background-position: 50px 50px;
 }
 
 #pic1{
@@ -571,33 +579,62 @@ float: left;
   position: relative;
 }
 
-#pic2{
-
+#pic22{
   margin-top: 10px;
   min-height: 300px;
-background-color: rgb(0, 56, 139);
-width: 30%;
-float: left;
-background: url(../img/bussHolder.png) no-repeat  ; 
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
+  background-color: white;
+  width: 30%;
+  min-width: 30%;
+  overflow: hidden;
+  max-height: 300px;
+  float: left;
+  /* background: url(../img/bussHolder.png) no-repeat  ;  */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+  }
+  
+  #pic33{
+    margin-top: 10px;
+    min-height: 300px;
+    background-color: white;
+    width: 30%;
+    min-width: 30%;
+    overflow: hidden;
+    max-height: 300px;
+    float: left;
+    /* background: url(../img/bussHolder.png) no-repeat  ;  */
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      position: relative;
+    }
+    
+
+
+#pic2{
+
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-height: 80%;
+  max-width: 80%;
+  transform: translate(-50%, -50%);
 
 }
 #pic3{
 
-  margin-top: 10px;
-  min-height: 300px;
-
-width: 30%;
-float: left;
-background: url(../img/bussHolder.png); 
-background-repeat: no-repeat;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-height: 80%;
+  max-width: 80%;
+  transform: translate(-50%, -50%);
 
 }
 
@@ -638,6 +675,35 @@ background-size: cover;
   -webkit-text-fill-color: #00a7f5;
   font-family: 'Courier New', Courier, monospace;
 }
+
+#button{
+  display: none;
+}
+
+.myButton {
+	box-shadow: 3px 4px 0px 0px #8a2a21;
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	background-color:#c62d1f;
+	border-radius:18px;
+	border:1px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	background-color:#f24437;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
 
 .spacerInf{
   width: 5%;
